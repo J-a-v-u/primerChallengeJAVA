@@ -21,7 +21,7 @@ public class elegirConversion {
 			  valor.elegirMoneda();
 		  }else if(resp == "otro conversor"){
 			  System.out.println("3");
-			  JOptionPane.showMessageDialog(null, "Próximamente!");
+			  JOptionPane.showMessageDialog(null, "Próximamente!");//<-------------------------------------------
 		  };
 	}
 
