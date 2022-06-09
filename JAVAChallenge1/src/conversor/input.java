@@ -55,7 +55,7 @@ public class input {
 		catch (Exception e) {
 			System.out.println("Exception: " + e);
 			String[] options = {"Ok!"};
-			int seleccion = JOptionPane.showOptionDialog(null, "Este campo sólo admite números positivos y no puede estar vacío!", "ERROR", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "Este campo sólo admite números positivos y no puede estar vacío!", "ERROR", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				convertirPesosADolares();
 			}
@@ -66,18 +66,21 @@ public class input {
 		//JOptionPane.showMessageDialog(null, "La cantidad "+ cantidad +" en dólares equivale a " + cantidad*203 + " en pesos.");
 		if(cantidad>=0){		
 			String[] options = {"Desea realizar otra conversión?", "Salir", "Cancelar"};
-			int seleccion = JOptionPane.showOptionDialog(null, "La cantidad "+ cantidad +" en pesos equivale a " + cantidad/203 + " en dólares.", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "La cantidad "+ cantidad +" en pesos equivale a " + cantidad/203 + " en dólares.", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				System.out.println("Has pulsado si");
 				elegirConversion.main (null);
 			}else if(seleccion == 1){
 				System.out.println("Has pulsado salir");
+				JOptionPane.showMessageDialog(null, "¡Programa terminado!");
+				
 			}else if(seleccion == 2){
 				System.out.println("Has pulsado Cancel");
+				JOptionPane.showMessageDialog(null, "¡Programa terminado!");
 			} 
 		}else {
 			String[] options = {"Ok!"};
-			int seleccion = JOptionPane.showOptionDialog(null, "Sólo se permiten números positivos!", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "Sólo se permiten números positivos!", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				convertirPesosADolares();
 			}
@@ -99,7 +102,7 @@ public class input {
 		catch (Exception e) {
 			System.out.println("Exception: " + e);
 			String[] options = {"Ok!"};
-			int seleccion = JOptionPane.showOptionDialog(null, "Este campo sólo admite números positivos y no puede estar vacío!", "ERROR", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "Este campo sólo admite números positivos y no puede estar vacío!", "ERROR", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				convertirDolaresAPesos();
 			}
@@ -110,18 +113,20 @@ public class input {
 		//JOptionPane.showMessageDialog(null, "La cantidad "+ cantidad +" en dólares equivale a " + cantidad*203 + " en pesos.");
 		if(cantidad>=0){		
 			String[] options = {"Desea realizar otra conversión?", "Salir", "Cancelar"};
-			int seleccion = JOptionPane.showOptionDialog(null, "La cantidad "+ cantidad +" en dólares equivale a " + cantidad*203 + " en pesos.", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "La cantidad "+ cantidad +" en dólares equivale a " + cantidad*203 + " en pesos.", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				System.out.println("Has pulsado si");
 				elegirConversion.main (null);
 			}else if(seleccion == 1){
 				System.out.println("Has pulsado salir");
+				JOptionPane.showMessageDialog(null, "¡Programa terminado!");
 			}else if(seleccion == 2){
 				System.out.println("Has pulsado Cancel");
+				JOptionPane.showMessageDialog(null, "¡Programa terminado!");
 			} 
 		}else {
 			String[] options = {"Ok!"};
-			int seleccion = JOptionPane.showOptionDialog(null, "Sólo se permiten números positivos!", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "Sólo se permiten números positivos!", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				convertirDolaresAPesos();
 			}
@@ -146,7 +151,7 @@ public class input {
 		catch (Exception e) {
 			System.out.println("Exception: " + e);
 			String[] options = {"Ok!"};
-			int seleccion = JOptionPane.showOptionDialog(null, "Este campo sólo admite números positivos y no puede estar vacío!", "ERROR", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "Este campo sólo admite números positivos y no puede estar vacío!", "ERROR", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				convertirPesosAWon();
 			}
@@ -154,18 +159,20 @@ public class input {
 		}
 		if(cantidad>=0){		
 			String[] options = {"Desea realizar otra conversión?", "Salir", "Cancelar"};
-			int seleccion = JOptionPane.showOptionDialog(null, "La cantidad "+ cantidad +" en pesos equivale a " + cantidad*0.097 + " en wones.", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "La cantidad "+ cantidad +" en pesos equivale a " + cantidad*0.097 + " en wones.", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				System.out.println("Has pulsado si");
 				elegirConversion.main (null);
 			}else if(seleccion == 1){
 				System.out.println("Has pulsado salir");
+				JOptionPane.showMessageDialog(null, "¡Programa terminado!");
 			}else if(seleccion == 2){
 				System.out.println("Has pulsado Cancel");
+				JOptionPane.showMessageDialog(null, "¡Programa terminado!");
 			} 
 		}else {
 			String[] options = {"Ok!"};
-			int seleccion = JOptionPane.showOptionDialog(null, "Sólo se permiten números positivos!", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+			int seleccion = JOptionPane.showOptionDialog(null, "Sólo se permiten números positivos!", "Titulo", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, null, options, options[0]);
 			if(seleccion == 0) {
 				convertirPesosAWon();
 			}
